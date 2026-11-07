@@ -1,0 +1,154 @@
+h1, h2 {
+    font-family: "Brush Script MT", cursive;
+}
+
+body {
+    margin: 0;
+    background: #f5f0e5;
+    color: #382f27;
+    line-height: 1.65;
+}
+
+a {
+    color: #743b32;
+}
+
+.site-header {
+    padding: 1rem 8%;
+    border-bottom: 1px solid #d5c9b5;
+    background: #eee5d5;
+}
+
+.site-nav {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.site-nav a {
+    color: #5a392f;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem 8%;
+    background: #eee5d5;
+}
+
+.hero-copy,
+.hero-art {
+    flex: 1;
+}
+
+.text-image {
+    float: right;
+    width: 34%;
+    margin: 0.25rem 0 1rem 1.5rem;
+}
+
+.text-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-art {
+    margin: 0;
+}
+
+.hero-art img {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+}
+
+.content-section {
+    padding: 2rem 8%;
+    background: #fbf8f0;
+}
+
+.prose,
+.content-section > h4,
+.content-section > ul,
+.chart-note {
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.prose p {
+    margin-top: 0;
+}
+
+.contact-card {
+    margin: 2rem 8%;
+    padding: 1.5rem;
+    background: #e8ddca;
+}
+
+.book-chart {
+    max-width: 900px;
+    margin: 1rem auto;
+}
+
+.book-chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.book-chart .grid line {
+    stroke: #e1d7c7;
+}
+
+.book-chart .grid path,
+.book-chart .axis path,
+.book-chart .axis line {
+    stroke: #857565;
+}
+
+.book-chart .bar {
+    fill: #8b4a3b;
+}
+
+.book-chart .bar:hover {
+    fill: #633329;
+}
+
+.book-chart .axis text,
+.book-chart .axis-title {
+    fill: #382f27;
+    font: 12px Arial, sans-serif;
+}
+
+.chart-note {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        display: block;
+        padding: 1.5rem 6%;
+    }
+
+    .text-image {
+        width: 42%;
+        margin-left: 1rem;
+    }
+
+    .content-section {
+        padding: 1.5rem 6%;
+    }
+
+    @media (max-width: 420px) {
+        .text-image {
+            float: none;
+            width: min(100%, 300px);
+            margin: 0 auto 1rem;
+        }
+    }
+}
